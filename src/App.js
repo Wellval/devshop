@@ -9,11 +9,12 @@ import Home from "./views/Home";
 import Technologies from "./views/Technologies";
 import Portfolio from "./views/Portfolio";
 import FooterSection from "./components/FooterSection";
+import { BASENAME } from './constants'
 
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename={BASENAME}>
         <Header/>
         <Routes>
           <Route path='/home' exact element={<Home />} />
