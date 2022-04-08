@@ -1,0 +1,80 @@
+.example {
+    max-height: none;
+}
+
+.mrc-content {
+    overflow: hidden;
+    position: relative;
+    animation: close-text 1.2s forwards;
+
+    .mrc-content-wrap {
+        overflow: hidden;
+
+        a {
+            color: $dark-blue;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        .p-20 {
+            opacity: 1;
+            color: #000;
+            font-size: 16px;
+            line-height: 1.65em;
+        }
+    }
+}
+
+@keyframes close-text {
+    from {
+        max-height: 100vh; 
+        mask-image: none; 
+        -webkit-mask-image: none}
+    to {
+        max-height: 160px; 
+        mask-image: linear-gradient(to bottom, black 60%, transparent 90%); 
+        -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 90%);
+    }
+}
+
+@keyframes open-text {
+    from {
+        max-height: 160px; 
+        mask-image: linear-gradient(to bottom, black 60%, transparent 90%); 
+        -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 90%);}
+    to {
+        max-height: 1000px; 
+        mask-image: none;
+        -webkit-mask-image: none;
+    }
+}
+
+.mrc-content-open {
+    max-height: auto;
+    animation: open-text 1.2s backwards;
+}
+
+.mrc-btn-wrap {
+    display: inline-block;
+    margin: 15px 0;
+
+    button.btn.btn-small {
+        padding: 12px 24px;
+        background-color: $dark-blue;
+        font-size: 14px;
+        line-height: 20px;
+
+        &:hover {
+            background-color: $active-link;
+        }
+    }
+}
+
+.podcast-profile-img {
+    width: 70%;
+    margin-bottom: 65px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}

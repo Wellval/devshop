@@ -1,0 +1,40 @@
+.section.wave {
+  background-color: $lightblue;
+  .container {
+    flex-direction: column;
+
+    .content {
+      padding: 30px;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+
+  .tiny-wrapper {
+    margin: 15px;
+    padding: 10px;
+  }
+
+  .tiny {
+    height: 35px;
+  }
+}
+
+@media (max-width: 991px) {
+  .content._33 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 479px) {
+  .section.wave {
+    .container {
+      .content {
+        padding: 15px;
+      }
+    }
+  }
+}

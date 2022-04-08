@@ -1,0 +1,30 @@
+.testimonial-wrapper {
+    display: flex;
+    margin-top: 50px;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+
+    .testimonial-text-wrapper {
+        margin-bottom: 10px;
+        width: 86%;
+    }
+
+    .testimonial-text {
+        font-size: 16px;
+        line-height: 28px;
+        font-style: italic;
+        margin: 0 0 10px;
+    }
+
+    .testimonial-name {
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 600;
+    }
+}
+
