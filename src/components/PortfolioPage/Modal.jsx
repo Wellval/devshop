@@ -25,7 +25,7 @@ function Modal(props) {
                         <button className="close" onClick={closeModal}>x</button>
                     </div>
                     <div className="modal-body">
-                        <Carousel showStatus={false} showIndicators={false} showThumbs={false} showArrows={true} >
+                        <Carousel preventMovementUntilSwipeScrollTolerance={true} showStatus={false} showIndicators={false} showThumbs={false} showArrows={true} >
                             {props.modalSlides ? props.modalSlides.map(item =>
                                 <div className="divFlex">
                                     <div className="col-md-7">

@@ -27,7 +27,7 @@
   width: fit-content;
 }
 
-.modal-open .modal {
+.modal-open .active + .modal {
   visibility: visible;
   opacity: 1;
   transition: visibility 0s, opacity 0.2s linear;
@@ -202,6 +202,12 @@
 }
 
 @media (max-width: 991px) {
+    .technical_used {
+  overflow-y: scroll !important;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling:touch;
+  position: static;
+    }
   .modal-dialog {
     max-width: 500px;
     margin: 1.75rem auto;

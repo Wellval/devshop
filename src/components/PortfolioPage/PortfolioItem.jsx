@@ -7,9 +7,14 @@ function PortfolioItem(props) {
         document.body.classList.add('modal-open')
     }
 
+    const open = (e) => {
+        console.log(e.currentTarget)
+        e.currentTarget.classList.add('active');
+    }
+
     return (
         <div className="content _33">
-            <div href="#" className="lightbox-link w-inline-block w-lightbox">
+            <div href="#" className="lightbox-link w-inline-block w-lightbox" onClick={(e) => {open(e)}}>
                 <div className={`portfolio-wrapper ${props.color}`}>
                     <h3 className="portfolio-title">{props.title}</h3>
                     <div className="overlay-portf">
@@ -19,7 +24,6 @@ function PortfolioItem(props) {
                 </div>
             </div>
             {props.modalSlides ? <Modal title={props.title} modalSlides={props.modalSlides}></Modal> : ''}
-
         </div>
     )
 }
