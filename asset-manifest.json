@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/devshop/static/css/main.8cc64b21.css",
-    "main.js": "/devshop/static/js/main.baafa161.js",
+    "main.css": "/devshop/static/css/main.a5f4c816.css",
+    "main.js": "/devshop/static/js/main.7cabb45b.js",
     "static/media/fire.jpg": "/devshop/static/media/fire.48ac04730a01017fbea7.jpg",
     "static/media/hudsonhides.jpg": "/devshop/static/media/hudsonhides.0f6564b9da2d75f45253.jpg",
     "static/media/ngkf.jpg": "/devshop/static/media/ngkf.a0e94a945274c511c025.jpg",
@@ -19,6 +19,7 @@
     "static/media/podcast-profile.jpg": "/devshop/static/media/podcast-profile.e3943c7f0bc401dfdb1e.jpg",
     "static/media/todd.png": "/devshop/static/media/todd.93c2a48faaf6b4e7980a.png",
     "static/media/blackbook.png": "/devshop/static/media/blackbook.217873a56cf5ab8572bf.png",
+    "static/media/profila-2.png": "/devshop/static/media/profila-2.b37fcee4fec37daa3bf3.png",
     "static/media/php.png": "/devshop/static/media/php.b4859207ba66df736799.png",
     "static/media/footer-vector.png": "/devshop/static/media/footer-vector.f22ac7aea1768b296b5f.png",
     "static/media/footer-widget.png": "/devshop/static/media/footer-widget.8475bd6cad2636acc95d.png",
@@ -28,6 +29,8 @@
     "static/media/olympic-committee.png": "/devshop/static/media/olympic-committee.914bda80cad4a72dac21.png",
     "static/media/wordpress.png": "/devshop/static/media/wordpress.5ed6c55d697b4d55e26b.png",
     "static/media/review-portrait.jpg": "/devshop/static/media/review-portrait.bd54b5da6f0246ad26e0.jpg",
+    "static/media/profila-3.png": "/devshop/static/media/profila-3.674db81645d840f40189.png",
+    "static/media/profila-4.png": "/devshop/static/media/profila-4.674db81645d840f40189.png",
     "static/media/nate.jpg": "/devshop/static/media/nate.602d359c0aba90616de0.jpg",
     "static/media/our-work.svg": "/devshop/static/media/our-work.e1e84377aa16450ccc0378b30c8c5f69.svg",
     "static/media/react-native.png": "/devshop/static/media/react-native.45126428b86d50c0f60c.png",
@@ -45,11 +48,11 @@
     "static/media/bg-shape.svg": "/devshop/static/media/bg-shape.3098f59320941ddab6a1.svg",
     "static/media/borderline.svg": "/devshop/static/media/borderline.519d3e4f3a2917df162e.svg",
     "static/media/white-wave.svg": "/devshop/static/media/white-wave.52222a1c2c07747d8046.svg",
-    "main.8cc64b21.css.map": "/devshop/static/css/main.8cc64b21.css.map",
-    "main.baafa161.js.map": "/devshop/static/js/main.baafa161.js.map"
+    "main.a5f4c816.css.map": "/devshop/static/css/main.a5f4c816.css.map",
+    "main.7cabb45b.js.map": "/devshop/static/js/main.7cabb45b.js.map"
   },
   "entrypoints": [
-    "static/css/main.8cc64b21.css",
-    "static/js/main.baafa161.js"
+    "static/css/main.a5f4c816.css",
+    "static/js/main.7cabb45b.js"
   ]
 }
