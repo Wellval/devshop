@@ -37,12 +37,12 @@
 .fade {
   transition: opacity 0.15s linear;
   display: none;
-  background-color: rgba(24, 24, 24, 0.2);
+  background-color: rgba(24, 24, 24, 0.5);
 }
 
 .open-modal .fade {
   display: block;
-  background-color: rgba(24, 24, 24, 0.2);
+  background-color: rgba(24, 24, 24, 0.5);
 }
 
 .modal-xl {
