@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { pages } from "../constants/MenuPages";
 import { Anchor } from "antd"
 
@@ -34,9 +34,9 @@ function Header() {
         <header id="transparent-header">
             <div className="container">
                 <div className="header-wrap">
-                    <a href="#">
+                    <NavLink to="/home">
                         <img className="logo-img top" src="https://www.onestopdevshop.io/wp-content/uploads/2020/04/cropped-Logo-1.jpg" alt="logo"></img>
-                    </a>
+                    </NavLink>
                     <nav ref={dropdownMenu}>
                         <a href="#" className={`menu-links ${open ? 'open' : ''}`} onClick={() => setOpen(!open)}>
                             <span>{open}</span>
