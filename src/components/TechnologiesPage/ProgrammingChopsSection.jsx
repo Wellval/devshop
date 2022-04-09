@@ -46,11 +46,11 @@ function ProgrammingChops() {
                             <div className="wrapper top">
                                 <div className="content _50 padding">
                                     <div className="pre-title margin">Stuff We Do:</div>
-                                    {leftList.map(item => <li className="list-item"><p className="p-20"><img className="icon-list" src={listIcon}></img>{item}</p></li>)}
+                                    {leftList.map(item => <li key={item} className="list-item"><p className="p-20"><img className="icon-list" src={listIcon}></img>{item}</p></li>)}
                                 </div>
                                 <div className="content _50 padding">
                                     <div className="pre-title margin">Languages & Blockchain:</div>
-                                    {rightList.map(item => <li className="list-item"><p className="p-20"><img className="icon-list" src={listIcon}></img>{item}</p></li>)}
+                                    {rightList.map(item => <li key={item} className="list-item"><p className="p-20"><img className="icon-list" src={listIcon}></img>{item}</p></li>)}
                                 </div>
                             </div>
                         </div>

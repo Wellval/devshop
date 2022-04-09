@@ -10,18 +10,20 @@ import Technologies from "./views/Technologies";
 import Portfolio from "./views/Portfolio";
 import FooterSection from "./components/FooterSection";
 import { BASENAME } from './constants'
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   return (
     <div className="App">
       <Router basename={BASENAME}>
         <Header/>
+        <ScrollToTop>
         <Routes>
           <Route path='/home' exact element={<Home />} />
           <Route path="/" exact element={<Navigate replace to="/home" />} />
           <Route path='/technologies' element={<Technologies/>} />
           <Route path='/portfolio' element={<Portfolio/>} />
-        </Routes>
+        </Routes></ScrollToTop>
         <FooterSection />
       </Router>
     </div>

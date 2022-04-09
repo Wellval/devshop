@@ -30,7 +30,7 @@ function Design() {
                 </div>
                 <div className="content _50">
                     <h3>Things we can work on with you include</h3>
-                    {list.map(item => <li className="list-item"><p className="p-20"><img className="icon-list" src={listIcon}></img>{item}</p></li>)}
+                    {list.map(item => <li key={item} className="list-item"><p className="p-20"><img className="icon-list" src={listIcon}></img>{item}</p></li>)}
                 </div>     
             </div>
         </LayoutWithLines>

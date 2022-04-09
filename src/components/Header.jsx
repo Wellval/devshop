@@ -9,16 +9,16 @@ function Header() {
     const [submenuOpen, setSubmenuOpen] = useState(false);
     const ref = useRef(null);
     const dropdownMenu = useRef(null);
-    const {Link} = Anchor;
+    const { Link } = Anchor;
 
     const handleClickOutside = (event) => {
         if (dropdownMenu.current && !dropdownMenu.current.contains(event.target)) {
-          setOpen(false);
+            setOpen(false);
         }
-      }
+    }
 
     useEffect(() => {
-        if(open === false) {
+        if (open === false) {
             setSubmenuOpen(false);
         }
     }, [open]);
@@ -26,9 +26,9 @@ function Header() {
     useEffect(() => {
         document.addEventListener("mousedown", handleClickOutside);
         return () => {
-          document.removeEventListener("mousedown", handleClickOutside);
+            document.removeEventListener("mousedown", handleClickOutside);
         };
-      }, [dropdownMenu]);
+    }, [dropdownMenu]);
 
     return (
         <header id="transparent-header">
@@ -44,14 +44,14 @@ function Header() {
                         <ul className="main-menu">
                             {pages.map(x =>
                                 <li key={x.name}>
-                                    {x.name === 'contact us' ? <Anchor><Link href="#contactus" title={x.name}/></Anchor> :
-                                        <NavLink className={({ isActive }) => isActive ? "active-link" : 'link'} to={'/' + x.name.split(' ').join('').toLowerCase()}>
+                                    {x.name === 'contact us' ? <Anchor><Link href="#contactus" title={x.name} /></Anchor> :
+                                        <NavLink onClick={() => setOpen(false)} className={({ isActive }) => isActive ? "active-link" : 'link'} to={'/' + x.name.split(' ').join('').toLowerCase()}>
                                             {x.name} {x.submenus ? <i className="fa fa-caret-down"></i> : ''}
                                         </NavLink>
                                     }
                                     {x.submenus ? <span ref={ref} className={submenuOpen ? 'close-submenu' : 'open-submenu'} onClick={() => setSubmenuOpen(!submenuOpen)}></span> : ''}
                                     {x.submenus ? <ul className="submenu">
-                                        {x.submenus.map(submenu => <li key={submenu}><NavLink className={({ isActive }) => isActive ? "active-link" : 'link'} to={'/' + x.name + '/' + submenu.split(' ').join('').toLowerCase()}>{submenu}</NavLink></li>)}
+                                        {x.submenus.map(submenu => <li key={submenu}><NavLink onClick={() => setOpen(false)} className={({ isActive }) => isActive ? "active-link" : 'link'} to={'/' + x.name + '/' + submenu.split(' ').join('').toLowerCase()}>{submenu}</NavLink></li>)}
                                     </ul> : ''}
                                 </li>
                             )}

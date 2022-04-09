@@ -10,7 +10,7 @@ function Portfolio() {
                     <h2 className="w pb-0">PORTFOLIO</h2>
                 </div>
                 <div className="wrapper wrap">
-                    {portfolioItems.map(item => <PortfolioItem color={item.color} title={item.title}><img alt="" className="img-portfolio" src={item.image}></img></PortfolioItem>)}
+                    {portfolioItems.map(item => <PortfolioItem key={item.title + Math.random()} color={item.color} title={item.title} modalSlides={item.modalSlides}><img alt="" className="img-portfolio" src={item.image}></img></PortfolioItem>)}
                 </div>
             </div>
         </div>

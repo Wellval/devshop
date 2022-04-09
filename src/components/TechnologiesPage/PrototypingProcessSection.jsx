@@ -27,7 +27,7 @@ function PrototypingProcess() {
                 </div>
                 <div className="content _50">
                     <h3>Things we can work on with you include:</h3>
-                    {list.map(item => <li className="list-item"><p className="p-20"><img className="icon-list" src={listIcon}></img>{item}</p></li>)}
+                    {list.map(item => <li key={item} className="list-item"><p className="p-20"><img className="icon-list" src={listIcon}></img>{item}</p></li>)}
                     <p className="p-20"><strong>We can work on this as a stand-alone prototype to show other development teams,
                         or work through the entire project to completion.</strong></p>
                     <p className="p-20">To get a full breakdown of <strong>our Slingshot Prototyping Process.</strong></p>
