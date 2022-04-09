@@ -5,7 +5,7 @@ import CollapsableContent from "../CollapsableContent";
 
 function RiskFreeSection() {
     return (
-        <div className='wrapper'>
+        <div className='section column'>
             <div className='line-wrapper'>
                 <img className='dashed-line' src={dashedLine1} />
             </div>
@@ -13,7 +13,7 @@ function RiskFreeSection() {
                 <div className='content bg-shape'>
                     <img src={riskfree}></img>
                 </div>
-                <div className='content'>
+                <div className='wrapper top'>
                     <div className="pre-title">Work risk free</div>
                     <h2 className="title-content">The First 30 Days Of Your Project Are Guaranteed</h2>
                     <h4>Once you’ve started working with our team, we will ensure the quality by protecting the first 30 days of the project.</h4>
