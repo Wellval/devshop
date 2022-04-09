@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/devshop/static/css/main.d9e65bf6.css",
+    "main.css": "/devshop/static/css/main.6d6fafbe.css",
     "main.js": "/devshop/static/js/main.9f6c7318.js",
     "static/media/fire.jpg": "/devshop/static/media/fire.48ac04730a01017fbea7.jpg",
     "static/media/hudsonhides.jpg": "/devshop/static/media/hudsonhides.0f6564b9da2d75f45253.jpg",
@@ -45,11 +45,11 @@
     "static/media/bg-shape.svg": "/devshop/static/media/bg-shape.3098f59320941ddab6a1.svg",
     "static/media/borderline.svg": "/devshop/static/media/borderline.519d3e4f3a2917df162e.svg",
     "static/media/white-wave.svg": "/devshop/static/media/white-wave.52222a1c2c07747d8046.svg",
-    "main.d9e65bf6.css.map": "/devshop/static/css/main.d9e65bf6.css.map",
+    "main.6d6fafbe.css.map": "/devshop/static/css/main.6d6fafbe.css.map",
     "main.9f6c7318.js.map": "/devshop/static/js/main.9f6c7318.js.map"
   },
   "entrypoints": [
-    "static/css/main.d9e65bf6.css",
+    "static/css/main.6d6fafbe.css",
     "static/js/main.9f6c7318.js"
   ]
 }
