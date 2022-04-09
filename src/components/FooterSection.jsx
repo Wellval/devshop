@@ -27,7 +27,7 @@ function FooterSection() {
                         <ul id="primary-menu">
                         {pages.map(x =>
                                 <li key={x.name}>
-                                {x.name === 'contact us' ? <NavLink className="active-link" to="#contactus" title={x.name}>{x.name}</NavLink> :
+                                {x.name === 'contact us' ? <NavLink to="#contactus" title={x.name}>{x.name}</NavLink> :
                                     <NavLink className="link" to={'/' + x.name.split(' ').join('').toLowerCase()}>
                                         {x.name} 
                                     </NavLink>
